@@ -22,3 +22,15 @@
     color: white;
     margin-top: 100px;
 }
+.int{
+    background-color: black;  
+}
+.iphone14{
+    border: 1px solid red;
+    height: 500px;
+    margin-top: 10px;
+}
+.iphone{
+    font-size: 3.5rem;
+    color: white;
+}
