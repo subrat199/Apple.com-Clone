@@ -2,6 +2,9 @@ import React from 'react'
 import { MdSettings } from 'react-icons/md'
 import {  HStack } from '@chakra-ui/react'
 import {SearchIcon} from '@chakra-ui/icons'
+import {Link as ReactLink} from  'react-router-dom'
+import { VStack } from '@chakra-ui/react'
+import { Container } from '@chakra-ui/react'
 import {
   Box,
   Flex,
@@ -16,14 +19,11 @@ import {
   PopoverTrigger,
   PopoverContent,
   useColorModeValue,
-  useBreakpointValue,
   useDisclosure,
 } from '@chakra-ui/react';
 import {
   HamburgerIcon,
   CloseIcon,
-  ChevronDownIcon,
-  ChevronRightIcon,
 } from '@chakra-ui/icons';
 function Example() {
     return <Icon as={MdSettings} />
@@ -42,6 +42,7 @@ export default function Navbar() {
         borderStyle={'solid'}
         borderColor={useColorModeValue('gray.200', 'gray.900')}
         align={'center'}>
+        
         <Flex
           flex={{ base: 1, md: 'auto' }}
           ml={{ base: -2 }}
@@ -55,15 +56,15 @@ export default function Navbar() {
             aria-label={'Toggle Navigation'}
           />
         </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'center' }}>
-            <img src="https://1000logos.net/wp-content/uploads/2016/10/apple-emblem.jpg" alt="" width={"70px"} height={"70px"} border={"black"}/>
+        <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
+            <img src="https://1000logos.net/wp-content/uploads/2016/10/apple-emblem.jpg" alt="" width={"40px"} height={"40px"} border={"black"}/>
         </Flex>
         <Stack
           flex={{ base: 1, md: 0 }}
           justify={'flex-start'}
           direction={'row'}
           spacing={6}>
-          
+            <ReactLink to='/store'>
             <Text
             as={'a'}
             fontSize={'sm'}
@@ -72,7 +73,9 @@ export default function Navbar() {
             href={'#'}>
             Store
           </Text>
-             <Text
+            </ReactLink>
+          <ReactLink to='/Mac'>
+          <Text
             as={'a'}
             fontSize={'sm'}
             fontWeight={400}
@@ -80,6 +83,8 @@ export default function Navbar() {
             href={'#'}>
             Mac
           </Text>
+          </ReactLink>
+          <ReactLink to='/iPad'>
           <Text
             as={'a'}
             fontSize={'sm'}
@@ -88,6 +93,8 @@ export default function Navbar() {
             href={'#'}>
             iPad
           </Text>
+          </ReactLink>
+          <ReactLink to='/iPhone'>
           <Text
             as={'a'}
             fontSize={'sm'}
@@ -96,6 +103,8 @@ export default function Navbar() {
             href={'#'}>
             iPhone
           </Text>
+          </ReactLink>
+          <ReactLink to='/Watch'>
           <Text
             as={'a'}
             fontSize={'sm'}
@@ -104,6 +113,8 @@ export default function Navbar() {
             href={'#'}>
             Watch
           </Text>
+          </ReactLink>
+          <ReactLink to='/Airpods'>
           <Text
             as={'a'}
             fontSize={'sm'}
@@ -112,14 +123,18 @@ export default function Navbar() {
             href={'#'}>
             Airpods
           </Text>
+          </ReactLink>
+          <ReactLink to='/Tv'>
           <Text
             as={'a'}
             fontSize={'sm'}
             fontWeight={400}
             variant={'link'}
             href={'#'}>
-            Tv&Home
+            Tv
           </Text>
+          </ReactLink>
+          <ReactLink to='/onlyApple'>
           <Text
             as={'a'}
             fontSize={'sm'}
@@ -128,6 +143,8 @@ export default function Navbar() {
             href={'#'}>
             OnlyApple
           </Text>
+          </ReactLink>
+          <ReactLink to='/accessories'>
           <Text
             as={'a'}
             fontSize={'sm'}
@@ -136,6 +153,8 @@ export default function Navbar() {
             href={'#'}>
             Accessories
           </Text>
+          </ReactLink>
+          <ReactLink to='/support'>
           <Text
             as={'a'}
             fontSize={'sm'}
@@ -144,14 +163,18 @@ export default function Navbar() {
             href={'#'}>
             Support
           </Text>
+          </ReactLink>
             <HStack>
              <SearchIcon />
             </HStack>
         </Stack>
       </Flex>
-
+      <VStack>
+        <Text w={'100%'} bg='#1d1d1f' color='white' padding={'10px'} border='grey' marginTop={'-2px'}>
+        Get up to ₹6000 instant savings on orders over ₹41900 with HDFC Bank credit cards.‡ Plus No Cost EMI from most leading banks.‡‡ Shop now
+         </Text>
+    </VStack>
       <Collapse in={isOpen} animateOpacity>
-        
       </Collapse>
     </Box>
   );

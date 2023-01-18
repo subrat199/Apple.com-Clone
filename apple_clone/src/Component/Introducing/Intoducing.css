@@ -1,0 +1,24 @@
+.introducing{
+    border:1px solid black;
+    height: 60rem;
+    background-color: black;
+}
+.intro{
+    font-size: 3.5rem;
+    color: white;
+    margin-top: 100px;
+}
+.button{
+    background-color: black;
+    color: white;
+    margin-top: 25px;
+   border: 1px solid red;
+   padding: 12px;
+   border-radius: 30px;
+   border: 2px solid rgb(66, 2, 66);
+}
+.mac{
+    font-size: 3.5rem;
+    color: white;
+    margin-top: 100px;
+}
