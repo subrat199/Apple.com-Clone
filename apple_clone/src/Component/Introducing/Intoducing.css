@@ -50,14 +50,31 @@
     color: white;
 }
 .middle1{
-border: 1px solid black;
+border: 1px solid white;
 width: 97%;
 height: auto;
+margin:auto
+
 }
 .middle2{
-    border: 1px solid black;
+    border: 1px solid white;
     width: 100%;
+    margin: auto;
 }
 .middle h5{
     color: aliceblue;
+}
+.middle3{
+    border: 1px solid white;
+    width: 100%;
+    background-color: aliceblue;
+    color: black;
+}
+.middle3 p{
+    color: black;
+    font-size: 2rem;
+    margin: auto;
+}
+.middle3 h5{
+    color: black;
 }
