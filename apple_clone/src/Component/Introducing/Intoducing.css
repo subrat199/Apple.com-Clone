@@ -34,3 +34,30 @@
     font-size: 3.5rem;
     color: white;
 }
+.middle{
+    height: auto;
+    border: 1px solid white;
+    width: 98%;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 4px;
+    background-color: black;
+}
+.middle p{
+    font-size: 2rem;
+    color: white;
+}
+.middle1{
+border: 1px solid black;
+width: 97%;
+height: auto;
+}
+.middle2{
+    border: 1px solid black;
+    width: 100%;
+}
+.middle h5{
+    color: aliceblue;
+}
