@@ -43,26 +43,26 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 4px;
-    background-color: black;
+    background-color: white;
 }
 .middle p{
     font-size: 2rem;
-    color: white;
+    color: black;
 }
 .middle1{
-border: 1px solid white;
+border: 3px solid black;
 width: 97%;
 height: auto;
 margin:auto
 
 }
 .middle2{
-    border: 1px solid white;
+    border: 3px solid black;
     width: 100%;
     margin: auto;
 }
 .middle h5{
-    color: aliceblue;
+    color: black;
 }
 .middle3{
     border: 1px solid white;
@@ -77,4 +77,33 @@ margin:auto
 }
 .middle3 h5{
     color: black;
+}
+.macbook p{
+    color: black;
+    font-size: 2rem;
+}
+.macbook{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    gap:7px;
+    background-color: white;
+    margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.macbook div{
+    border: 1px solid  whitesmoke;
+    height: 130px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;  
+}
+.macbook1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:8px;
+    background-color: white;
+    margin-top: 30px;
+}
+.macbook1 div{
+    border: 1px solid  whitesmoke;
+    height: 310px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;  
 }
