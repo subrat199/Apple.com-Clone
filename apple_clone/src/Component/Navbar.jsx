@@ -2,9 +2,10 @@ import React from 'react'
 import { MdSettings } from 'react-icons/md'
 import {  HStack } from '@chakra-ui/react'
 import {SearchIcon} from '@chakra-ui/icons'
-import {Link as ReactLink} from  'react-router-dom'
+import {Link as ReactLink, Navigate} from  'react-router-dom'
 import { VStack } from '@chakra-ui/react'
 import { Container } from '@chakra-ui/react'
+import Introducing from '../Component/Introducing/Introducing';
 import {
   Box,
   Flex,
@@ -42,7 +43,6 @@ export default function Navbar() {
         borderStyle={'solid'}
         borderColor={useColorModeValue('gray.200', 'gray.900')}
         align={'center'}>
-        
         <Flex
           flex={{ base: 1, md: 'auto' }}
           ml={{ base: -2 }}
@@ -56,9 +56,11 @@ export default function Navbar() {
             aria-label={'Toggle Navigation'}
           />
         </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-            <img src="https://1000logos.net/wp-content/uploads/2016/10/apple-emblem.jpg" alt="" width={"40px"} height={"40px"} border={"black"}/>
-        </Flex>
+          <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
+         <ReactLink to='/'>
+         <img src="https://1000logos.net/wp-content/uploads/2016/10/apple-emblem.jpg" alt="" width={"40px"} height={"40px"} border={"black"}/>
+         </ReactLink>
+          </Flex>
         <Stack
           flex={{ base: 1, md: 0 }}
           justify={'flex-start'}
@@ -164,6 +166,16 @@ export default function Navbar() {
             Support
           </Text>
           </ReactLink>
+          <ReactLink to='/login'>
+          <Text
+            as={'a'}
+            fontSize={'sm'}
+            fontWeight={400}
+            variant={'link'}
+            href={'#'}>
+            Login
+          </Text>
+          </ReactLink>
             <HStack>
              <SearchIcon />
             </HStack>
@@ -174,20 +186,18 @@ export default function Navbar() {
         Get up to ₹6000 instant savings on orders over ₹41900 with HDFC Bank credit cards.‡ Plus No Cost EMI from most leading banks.‡‡ Shop now
          </Text>
     </VStack>
+    {/* <Introducing/>       */}
       <Collapse in={isOpen} animateOpacity>
       </Collapse>
     </Box>
   );
 }
-
 const DesktopNav = () => {
   const linkColor = useColorModeValue('gray.600', 'gray.200');
   const linkHoverColor = useColorModeValue('gray.800', 'white');
   const popoverContentBgColor = useColorModeValue('white', 'gray.800');
-
   return (
     <Stack direction={'row'} spacing={4}>
-    
         <Box>
           <Popover trigger={'hover'} placement={'bottom-start'}>
             <PopoverTrigger>
@@ -204,8 +214,6 @@ const DesktopNav = () => {
                 
               </Link>
             </PopoverTrigger>
-
-          
               <PopoverContent
                 border={0}
                 boxShadow={'xl'}

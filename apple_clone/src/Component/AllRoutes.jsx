@@ -11,6 +11,9 @@ import Tv from './../Pages/Tv';
 import Watch from './../Pages/Watch';
 import iPad from '../Pages/IPad';
 import iPhone from '../Pages/IPhone';
+import SingleProduct from './../Pages/SingleProduct';
+import Login from './../Pages/Login';
+import PrivateRoute from './PrivateRoute';
 const AllRoutes = () => {
   return (
     <div>
@@ -20,12 +23,14 @@ const AllRoutes = () => {
             <Route path="/airpods" element={<Airpods/>} />
             <Route path='/iPad' element={<iPad/>}/>
             <Route path='/iPhone' element={<iPhone/>}/>
-            <Route path='/Mac' element={<Mac/>}/>
+            <Route path='/Mac' element={<PrivateRoute><Mac/></PrivateRoute>}/>
             <Route path='/onlyApple' element={<OnlyApple/>}/>
             <Route path='/store' element={<Store/>}/>
             <Route path='/support' element={<Support/>}/>
             <Route path='/tv' element={<Tv/>}/>
             <Route path='/watch' element={<Watch/>}/>
+            <Route path='/product/:id' element={<SingleProduct/>}/>
+            <Route path='/login' element={<Login/>}/>
         </Routes>
     </div>
   )

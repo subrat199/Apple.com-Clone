@@ -1,8 +1,10 @@
 import React from 'react'
-
+import StoreMacbook from './../Component/Introducing/StoreMacbook';
 const Store = () => {
   return (
-    <div></div>
+    <div>
+      <StoreMacbook/>
+    </div>
   )
 }
 

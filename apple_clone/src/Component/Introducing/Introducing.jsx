@@ -4,6 +4,7 @@ import { Button, Box, background } from "@chakra-ui/react";
 import { Image } from "@chakra-ui/react";
 import Middle from "./Middle";
 import Carousel from "./../Carousel";
+import Footer from './../Footer';
 const Introducing = () => {
   return (
     <div className="introducing">
@@ -71,6 +72,7 @@ const Introducing = () => {
       </Box>
       <Middle />
       <Carousel />
+      <Footer/>
     </div>
   );
 };
