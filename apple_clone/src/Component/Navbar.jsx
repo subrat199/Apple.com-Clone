@@ -176,6 +176,16 @@ export default function Navbar() {
             Login
           </Text>
           </ReactLink>
+          <ReactLink to='/admin'>
+          <Text
+            as={'a'}
+            fontSize={'sm'}
+            fontWeight={400}
+            variant={'link'}
+            href={'#'}>
+            Admin
+          </Text>
+          </ReactLink>
             <HStack>
              <SearchIcon />
             </HStack>

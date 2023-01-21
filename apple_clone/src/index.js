@@ -9,11 +9,11 @@ import { AuthContextProvider } from './Context/AuthContextProvider';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ChakraProvider>
-        <AuthContextProvider>
-        <BrowserRouter>
-        <App />
-        </BrowserRouter>
+    <BrowserRouter>
+        <AuthContextProvider> 
+        <App />  
     </AuthContextProvider>
+    </BrowserRouter>
   </ChakraProvider>
 
 );

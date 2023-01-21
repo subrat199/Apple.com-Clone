@@ -6,7 +6,6 @@ export default function Login() {
     const [email,setEmail]=useState("eve.holt@reqres.in")
     const [password,setPassword]=useState("cityslicka")
     const {login,isAuth,setToken,setIsAuth}=useContext(AuthContext)
-    console.log(isAuth)
 const HandleLogin= async (e)=>{
     e.preventDefault()
     const userDetails={
@@ -34,7 +33,7 @@ if(isAuth){
         <div>
             <form className = "auth_form" onSubmit={HandleLogin} >
                 <input
-                    style = {{padding:"5px", margin: "10px", width: 200}}
+                    style = {{padding:"5px", margin: "10px", width: 300, border:'1px solid black',borderRadius:'5px'}}
                     value={email}
                     type = "email"
                     className = "email"
@@ -42,14 +41,14 @@ if(isAuth){
                 />
                 <br />
                 <input
-                    style = {{padding:"5px", margin: "10px", width: 200}}
+                   style = {{padding:"5px", margin: "10px", width: 300, border:'1px solid black',borderRadius:'5px'}}
                     value={password}
                     type = "password"
                     className = "password"
                     placeholder = "Enter password"
                 />
                 <br />
-                <input className = "submit" type = "submit"/>
+                <input className = "submit" type = "submit"  style = {{padding:"5px", margin: "10px", width: 300, border:'1px solid black',borderRadius:'5px'}}/>
             </form>                 
         </div>
     )

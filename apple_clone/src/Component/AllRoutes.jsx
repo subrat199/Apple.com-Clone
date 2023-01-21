@@ -14,6 +14,7 @@ import iPhone from '../Pages/IPhone';
 import SingleProduct from './../Pages/SingleProduct';
 import Login from './../Pages/Login';
 import PrivateRoute from './PrivateRoute';
+import Admin from './Admin';
 const AllRoutes = () => {
   return (
     <div>
@@ -25,12 +26,13 @@ const AllRoutes = () => {
             <Route path='/iPhone' element={<iPhone/>}/>
             <Route path='/Mac' element={<PrivateRoute><Mac/></PrivateRoute>}/>
             <Route path='/onlyApple' element={<OnlyApple/>}/>
-            <Route path='/store' element={<Store/>}/>
+            <Route path='/store' element={<PrivateRoute><Store/></PrivateRoute>}/>
             <Route path='/support' element={<Support/>}/>
             <Route path='/tv' element={<Tv/>}/>
             <Route path='/watch' element={<Watch/>}/>
             <Route path='/product/:id' element={<SingleProduct/>}/>
             <Route path='/login' element={<Login/>}/>
+            <Route path='/admin' element={<Admin/>}/>
         </Routes>
     </div>
   )
