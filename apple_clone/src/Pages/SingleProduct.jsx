@@ -2,6 +2,7 @@ import React from 'react'
 import axios from 'axios';
 import { useReducer,useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import Footer from './../Component/Footer';
 import {
     Box,
     chakra,
@@ -20,9 +21,10 @@ import {
     List,
     ListItem,
   } from '@chakra-ui/react';
-  import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
   import { MdLocalShipping } from 'react-icons/md';
-  const initstate={
+  import Model from './../Component/Model';
+
+const initstate={
     products:[],
     isLoading:true,
     isError:""
@@ -47,12 +49,13 @@ const reducer = (state, action) => {
 }
 const SingleProduct = () => {
   const [state, dispatch] = useReducer(reducer, initstate) 
+  const {id}=useParams()
   useEffect(() =>{
       getdata() 
-  },[])
+  },[id])
 const getdata= () =>{
   axios
-  .get(' http://localhost:8000/posts')
+  .get(`http://localhost:8000/posts/${id}`)
   .then((res)=>{
       dispatch({
           type: 'fetch_success',
@@ -66,7 +69,7 @@ const getdata= () =>{
   })
 }
 const {products,isLoading,isError}=state;
-const {image,title,price}=products;                                                                                                                                                                                            
+const {img,title,price}=products;                                                                                                                                                                                     
   return (
     <div>
         <h1>Productdetails</h1>
@@ -80,7 +83,7 @@ const {image,title,price}=products;
             rounded={'md'}
             alt={'product image'}
             src={
-            image
+            img
             }
             fit={'cover'}
             align={'center'}
@@ -218,9 +221,8 @@ const {image,title,price}=products;
               transform: 'translateY(2px)',
               boxShadow: 'lg',
             }}>
-            Add to cart
+            <Model img={img} title={title } price={price} />
           </Button>
-
           <Stack direction="row" alignItems="center" justifyContent={'center'}>
             <MdLocalShipping />
             <Text>2-3 business days delivery</Text>
@@ -228,6 +230,7 @@ const {image,title,price}=products;
         </Stack>
       </SimpleGrid>
     </Container> 
+    <Footer/>
     </div>
   );
 }
