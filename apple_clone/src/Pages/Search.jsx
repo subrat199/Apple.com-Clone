@@ -1,26 +1,40 @@
 import React from 'react'
-import { useState } from 'react'
-const Search = () => {
-    const [search,setSearch]=useState('')
-    const handleChange = (e) => {
-    setSearch(e.target.value)}
-    console.log(search)
 
+const Search = () => {
+  const [text,setText]=React.useState('')
+  const [data, setData] = React.useState([])
+  const handleChange = (e) => {
+    setText(e.target.value)
+}
+const handleClick=()=>{
+  getdata()
+}
+const getdata =async () =>{
+try {
+  const res=await fetch(`http://localhost:8000/posts?q=${text}`)
+  const res2=await res.json()
+ setData(res2)
+} catch (error) {
+  console.log(error)
+}
+}
   return (
     <div>
-        <input
-          type="text"
-          placeholder="Search"
-          aria-label="Search"
-          aria-describedby="basic-addon1"
-          id="basic-addon1"
-          value={search}
-          name="search"
-          style={{border:'1px solid black',marginTop:'10px'}}
-          onChange={handleChange}
-
-        />
-        <button>Search</button>
+      <div>
+      <input type="text" style={{border:'1px solid red'}} onChange={handleChange} value={text}/>
+      <button onClick={handleClick}>Search</button>
+      </div>
+      {
+       data.map((el)=>{
+      return (
+      <div key={el.id}>
+        <img src={el.img} alt="" />
+        <h5>{el.title}</h5>
+        <h5>{el.price}</h5>
+      </div>
+      )
+       })
+      }
     </div>
   )
 }

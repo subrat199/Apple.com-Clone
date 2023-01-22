@@ -3,50 +3,86 @@
     {
       "id": 1,
       "title": "HomePod",
-      "img":"https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/homepod-mini-og-202110?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1632930650000",
-      "price":"$29.99"
+      "img": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/homepod-mini-og-202110?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1632930650000",
+      "price": "29.99"
     },
     {
       "id": 2,
       "title": "AirPods Pro",
-      "img":"https://media.istockphoto.com/id/1208634599/photo/apple-airpods-pro-on-a-white-background.jpg?s=612x612&w=0&k=20&c=Vxapcn3Erw1QeK7b5nEsae_DolEoaVO6PwdWDh7ERBc=",
-      "price":"$249.00"
+      "img": "https://media.istockphoto.com/id/1208634599/photo/apple-airpods-pro-on-a-white-background.jpg?s=612x612&w=0&k=20&c=Vxapcn3Erw1QeK7b5nEsae_DolEoaVO6PwdWDh7ERBc=",
+      "price": "249.00"
     },
     {
       "id": 3,
       "title": "Home Pod Mini",
-      "img":"https://unistore.in/wp-content/uploads/2022/09/homepod-mini-select-spacegray-202110_FV1.jpg",
-      "price":"$99.00"
+      "img": "https://unistore.in/wp-content/uploads/2022/09/homepod-mini-select-spacegray-202110_FV1.jpg",
+      "price": "99.00"
     },
     {
       "id": 4,
       "title": "Beats Studia Buds",
-      "img":"https://fdn.gsmarena.com/imgroot/news/21/06/beats-studio-buds/-1220x526/gsmarena_000.jpg",
-      "price":"$356.00"
+      "img": "https://fdn.gsmarena.com/imgroot/news/21/06/beats-studio-buds/-1220x526/gsmarena_000.jpg",
+      "price": "356.00"
     },
     {
       "id": 5,
       "title": "AirPods Max",
-      "img":"https://i.gadgets360cdn.com/large/apple_airpods_pro_2_review_main_1664951347941.jpg?downsize=400:*",
-      "price":"$56.00"
+      "img": "https://i.gadgets360cdn.com/large/apple_airpods_pro_2_review_main_1664951347941.jpg?downsize=400:*",
+      "price": "56.00"
     },
     {
       "id": 6,
       "title": "AirPods Mini",
-      "img":"https://www.cultofmac.com/wp-content/uploads/2019/01/Welt.jpg",
-      "price":"$26.00"
+      "img": "https://www.cultofmac.com/wp-content/uploads/2019/01/Welt.jpg",
+      "price": "26.00"
     },
     {
       "id": 7,
       "title": "AirPods Mini",
-      "img":"https://akm-img-a-in.tosshub.com/indiatoday/images/story/202209/iphone14promax_1.jpg?VersionId=TF0EiCCvxCMCnvSN4R5Z2FfnkoH.u51l",
-      "price":"$126320.00"
+      "img": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202209/iphone14promax_1.jpg?VersionId=TF0EiCCvxCMCnvSN4R5Z2FfnkoH.u51l",
+      "price": "126320.00"
     },
     {
       "id": 8,
       "title": "Ipad Mini",
-      "img":"https://images.unsplash.com/photo-1585790051609-09928c362a42?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YXBwbGUlMjBpcGFkJTIwcHJvfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
-      "price":"$130300.00"
+      "img": "https://images.unsplash.com/photo-1585790051609-09928c362a42?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YXBwbGUlMjBpcGFkJTIwcHJvfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+      "price": "130300.00"
+    },
+    {
+      "id": 9,
+      "title": "IPhone 14 pro Max",
+      "img": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-14-pro-max-1.jpg",
+      "price": "180300.00"
+    },
+    {
+      "id": 10,
+      "title": "Mac OS",
+      "img": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202111/MacBook_Pro_14_main.jpg?size=690:388",
+      "price": "180.00"
+    },
+    {
+      "id": 11,
+      "title": "Mac CP",
+      "img": "https://9to5mac.com/wp-content/uploads/sites/6/2022/02/macos-system-preferences-concept-1.jpg?quality=82&strip=all",
+      "price": "30.00"
+    },
+    {
+      "id": 12,
+      "title": "I Mac",
+      "img": "https://cdn.images.express.co.uk/img/dynamic/59/590x/Apple-Macbook-update-macOs-Mojave-972157.jpg?r=1533307462196",
+      "price": "56000.00"
+    },
+    {
+      "id": 13,
+      "title": "I Mac",
+      "img": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-13-pro-max-01.jpg",
+      "price": "56000.00"
+    },
+    {
+      "name": "zebra",
+      "img": "https://www.shutterstock.com/image-photo/surreal-image-african-elephant-wearing-260nw-1365289022.jpg",
+      "price": "123",
+      "id": 14
     }
   ]
 }
