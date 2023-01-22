@@ -1,12 +1,6 @@
 import { Button, Stack,Text} from '@chakra-ui/react';
 import { useState } from 'react';
 import {
-  Alert,
-  AlertIcon,
-  AlertTitle,
-  AlertDescription,
-} from '@chakra-ui/react'
-import {
     Modal,
     ModalOverlay,
     ModalContent,
@@ -21,23 +15,6 @@ import {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const [Count,setCount]=useState(1)
     const handleClick=()=>{
-      //   <Alert
-      //   status='success'
-      //   variant='subtle'
-      //   flexDirection='column'
-      //   alignItems='center'
-      //   justifyContent='center'
-      //   textAlign='center'
-      //   height='200px'
-      // >
-      //   <AlertIcon boxSize='40px' mr={0} />
-      //   <AlertTitle mt={4} mb={1} fontSize='lg'>
-      //     Application submitted!
-      //   </AlertTitle>
-      //   <AlertDescription maxWidth='sm'>
-      //     Thanks for submitting your application. Our team will get back to you soon.
-      //   </AlertDescription>
-      // </Alert> 
       alert('Thank you for Visiting The Website.You Have Successfully Purchase the Product.')
 
     }

@@ -15,6 +15,7 @@ import SingleProduct from './../Pages/SingleProduct';
 import Login from './../Pages/Login';
 import PrivateRoute from './PrivateRoute';
 import Admin from './Admin';
+import Search from './../Pages/Search';
 const AllRoutes = () => {
   return (
     <div>
@@ -33,6 +34,7 @@ const AllRoutes = () => {
             <Route path='/product/:id' element={<SingleProduct/>}/>
             <Route path='/login' element={<Login/>}/>
             <Route path='/admin' element={<Admin/>}/>
+            <Route path='/search' element={<Search/>}/>
         </Routes>
     </div>
   )

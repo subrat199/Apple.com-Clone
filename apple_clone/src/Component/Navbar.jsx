@@ -186,9 +186,16 @@ export default function Navbar() {
             Admin
           </Text>
           </ReactLink>
-            <HStack>
-             <SearchIcon />
-            </HStack>
+          <ReactLink to='/search'>
+          <Text
+            as={'a'}
+            fontSize={'sm'}
+            fontWeight={400}
+            variant={'link'}
+            href={'#'}>
+            Search
+          </Text>
+          </ReactLink>
         </Stack>
       </Flex>
       <VStack>
